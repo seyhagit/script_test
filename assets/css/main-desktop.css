@@ -1,0 +1,718 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: whitesmoke;
+    position: relative;
+    max-height: 100%;
+}
+.clear{clear: both;}
+.slick-arrow{
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    opacity: 0.4;
+    transition: all 0.3s;
+}
+.slick-arrow:hover{opacity: 0.7;}
+.arrow-right{
+    right: -25px;
+}
+.arrow-left{
+    left: -25px;
+}
+/*start navtop*/
+.container_fluid_cus{
+    background-color: white;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+    z-index: 16;
+}
+.container{padding: 0;}
+.nav_top{
+    width: 100%;
+}
+/*responsive*/
+.nav_top .box_option_re{
+    display: none;
+}
+
+.nav_top .box_option_re:hover{
+    opacity: 1;
+}
+
+/*humberger menu*/
+#boxOptionRe{
+    float: left;
+    padding: 5px 10px;
+    margin-top: 13px;
+    margin-right: 8px;
+    margin-left: 5px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+.nav_top .box_login_re{
+    float: right;
+    display: none;
+    padding-right: 10px;
+    margin-top: 15px;
+}
+.nav_top .box_login_re > ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.nav_top .box_login_re > ul > li > a{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}
+/*logo*/
+.nav_top .box_logo{
+    float: left;
+    height: 50px;
+}
+.nav_top .box_logo img{
+    height: 100%;
+}
+
+/*menu header top*/
+.nav_top .box_contact_about{
+    float: left;
+    margin-left: 37px;
+    margin-top: 14px;
+}
+.nav_top .box_contact_about > ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav_top .box_contact_about > ul > li{
+    float: left;
+    border-right: 1px solid #1b6d85;
+}
+.nav_top .box_contact_about > ul > li:last-child{
+    border-right: none;
+}
+.nav_top .box_contact_about > ul > li > a{
+    display: block;
+    padding: 2px 10px;
+    text-decoration: none;
+}
+
+/*hamberger category*/
+.main_boxnavtop_2{
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 5px;
+}
+.box_categories_top{
+    float: left;
+    position: relative;
+}
+.box_categories_top > ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.box_categories_top > ul > li{
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid white;
+}
+.box_categories_top > ul > li:hover::after{
+    content: "";
+    background-color: white;
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+    width: 100%;
+    height: 6px;
+    z-index: 11;
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+}
+
+.box_categories_top > ul > li:hover{
+    color: #2e6da4;
+    border: 1px solid lightgray;
+}
+.box_categories_top .categories_top{
+    width: 210px;
+    position: absolute;
+    background-color: white;
+    z-index: 10;
+    border: 1px solid lightgray;
+    top: 105%;
+    left: 0;
+    padding: 10px 0 10px 2px;
+    display: none;
+}
+.categories_top > ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.categories_top > ul > li{
+    float: left;
+    width: 100%;
+}
+.categories_top > ul > li > a{
+    display: block;
+    padding: 8px 8px;
+    width: 100%;
+    text-decoration: none;
+    font-size: 13px;
+    color: #2e6da4;
+    position: relative;
+}
+.categories_top > ul > li > a > span{
+    float: right;
+    color: lightgray;
+    padding-right: 10px;
+    transition: 0.3s;
+}
+.categories_top > ul > li:hover{
+    box-shadow: 0 0 3px rgba(0,0,0,0.4);
+    background-color: white;
+}
+.categories_top > ul > li > a > .temp_catetop{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: -2px;
+    width: 5px;
+    height: 100%;
+    z-index: 11;
+    display: none;
+}
+.categories_top > ul > li > ul{
+    list-style: none;
+    background-color: white;
+    position: absolute;
+    left: 100%;
+    height: 100%;
+    top: 0;
+    width: 500px;
+    border-radius: 4px;
+    padding: 20px 30px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.4);
+    cursor: context-menu;
+    display: none;
+}
+.categories_top > ul > li > ul > li{
+    float: left;
+}
+.categories_top > ul > li > ul > li > a{
+    color: coral;
+    font-size: 14px;
+    font-weight: bold;
+}
+.categories_top > ul > li > ul > li > a:hover{
+    color: cornflowerblue;
+}
+.categories_top > ul > li > ul > li > ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-top: 7px;
+}
+.categories_top > ul > li > ul > li > ul > li{
+    float: left;
+    margin-bottom: 10px;
+}
+.categories_top > ul > li > ul > li > ul > li:last-child{
+    margin-bottom: 0;
+}
+.categories_top > ul > li > ul > li > ul > li > a{
+    display: block;
+    padding: 5px 10px;
+    font-size: 13px;
+    color: dimgray;
+}
+.categories_top > ul > li > ul > li > ul > li > a:hover{
+    color: cornflowerblue;
+}
+/*search nav top*/
+.box_search_navtop{
+    float: left;
+    margin-left: 65px;
+    width: 54%;
+    border: 2px solid #383a9b;
+    padding: 0;
+}
+.box_search_panel_top > ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.box_search_panel_top > ul > li{
+    padding: 8px 10px;
+    cursor: pointer;
+    border-right: 1px solid lightgray;
+    float: left;
+    position: relative;
+    width: 15%;
+    text-align: center;
+}
+.box_search_panel_top > ul > li > .titleCatTopNav{
+    font-size: 11px;
+    margin-left: 5px;
+}
+.box_search_panel_top > ul > li > ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 110%;
+    background-color: white;
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+    display: none;
+    z-index: 10;
+}
+.box_search_panel_top > ul > li > ul > li{
+    float: left;
+    width: 100%;
+}
+.box_search_panel_top > ul > li > ul > li > a{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    text-align: left;
+}
+.box_search_panel_top > ul > li > ul > li > a:hover{
+    background-color: whitesmoke;
+}
+.box_txt_input_search{
+    float: left;
+    width: 65%;
+    height: 100%;
+    position: relative;
+}
+.box_txt_input_search > input{
+    width: 100%;
+    font-size: 15px;
+    padding: 7.5px 15px;
+    border: none;
+}
+.btnSearchNavTop{
+    padding: 7.5px;
+    float: right;
+    background-color: #383a9b;
+    width: 20%;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+/*right nav tool login register*/
+.main_box_tool_right_navtop{
+    float: right;
+}
+.box_tool_right_navtop{
+    height: 39px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.box_tool_right_navtop .all_box_right{
+    padding: 5px 10px 5px 10px;
+    float: left;
+    opacity: 0.5;
+    cursor: pointer;
+    background-color: white;
+    position: relative;
+    height: 43px;
+}
+
+.box_tool_right_navtop .all_box_right:hover{
+    opacity: 1;
+    box-shadow: 1px 2px 3.5px rgba(0,0,0,0.4);
+}
+.box_tool_right_navtop .all_box_right .box_img{
+    height: 30px;
+    width: 30px;
+    float: left;
+}
+.box_tool_right_navtop .all_box_right .box_img img{
+    width: 100%;
+    height: 100%;
+}
+.box_tool_right_navtop .all_box_right .box_title{
+    float: left;
+    height: 30px;
+    padding-left: 5px;
+}
+.box_tool_right_navtop .all_box_right .sub_box_title{
+    height: 30px;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 12px;
+}
+.sub_box_title .box_number_fav{
+    height: 18px;
+    width: 18px;
+    background-color: #1b6d85;
+    border-radius: 50%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+}
+/*dropdown login register*/
+.box_tool_right_navtop .all_box_right .content_box_right{
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 10px;
+    width: 270px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+    display: none;
+}
+.box_tool_right_navtop .all_box_right::after{
+    content: "";
+    background-color: white;
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    width: 100%;
+    height: 6px;
+}
+
+/*shrink menu top*/
+/*scroll top*/
+.add_container_fluid_cus{
+    position: fixed;
+    width: 100%;
+    height: 55px;
+}
+.add_mainBoxNavTop2{
+    float: right;
+    width: 84%;
+}
+.add_box_categories_top{
+    margin-top: -7px;
+}
+.add_box_search_navtop{
+    float: left;
+    width: 70%;
+    margin-top: -7px;
+    border: none;
+    margin-left: 1%;
+}
+.add_box_txt_input_search{
+    width: 80%;
+    border-right: none;
+}
+.add_txtSearchNavTop{
+    border: 1px solid lightgray !important;
+    border-radius: 4px 0 0 4px;
+}
+.add_btnSearchNavTop{
+    border: 1px solid #383a9b;
+    border-radius: 0 4px 4px 0;
+}
+.add_body{
+    overflow: hidden;
+}
+.add21_box_txt_input_search{
+    float: left;
+    width: 65%;
+    height: 100%;
+    position: relative;
+}
+/*box content nav left*/
+.coverBoxContentNavLeftRe{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 10;
+}
+.boxContentNavleftRe{
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.subBoxContentNavleftRe{
+    height: 100%;
+    background-color: white;
+    border-right: 5px solid lightgray;
+}
+.subBoxContentNavleftRe > .header{
+    background-color: #bbbdff;
+}
+.subBoxContentNavleftRe > .header > .boxImg{
+    width: 50px;
+    height: 50px;
+    background-image: url("../pic/ind/defauld.png");
+    border-radius: 50%;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.subBoxContentNavleftRe > .header > .boxImg > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.subBoxContentNavleftRe > .header > span > a{
+    text-decoration: none;
+    color: white;
+}
+.subBoxContentNavleftRe > .header > span > a:hover{
+    color: whitesmoke;
+}
+.bodyContentNavLeft > ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.bodyContentNavLeft > ul > li{
+    float: left;
+    width: 100%;
+}
+.bodyContentNavLeft > ul > li > a{
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    color: gray;
+    float: left;
+    width: 100%;
+}
+.bodyContentNavLeft > ul > li > a:hover{
+    color: dimgray;
+}
+.bodyContentNavLeft > ul > li > a > .boxImg{
+    margin-right: 30px;
+    float: left;
+}
+.bodyContentNavLeft > ul > li > a > .boxImg > .subBoxImg{
+    height: 20px;
+    width: 20px;
+    opacity: 0.6;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.bodyContentNavLeft > ul > li > a > .boxImg > .subBoxImg > img{
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.bodyContentNavLeft > ul > li > a > .conTitle{
+    float: left;
+    margin-right: 15px;
+}
+.bodyContentNavLeft > ul > li > a > .boxNumber{
+    float: left;
+    margin-top: 2px;
+}
+.bodyContentNavLeft > ul > li > a > .boxNumber > .subBoxNumber{
+    height: 17.5px;
+    width: 17.5px;
+    background-color: pink;
+    font-size: 9px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+}
+.contentHistorySearchInputTop{
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+    display: none;
+    z-index: 99;
+}
+
+.contentHistorySearchInputTop > .modal-body > span{
+    margin: 4px 3px;
+    float: left;
+    border: 1px solid cornflowerblue;
+    border-radius: 3px;
+}
+
+.contentHistorySearchInputTop > .modal-body > span > i{
+    font-size: 17px;
+    margin-right: 5px;
+    color: lightgray;
+    cursor: pointer;
+    margin-left: 2px;
+    float: left;
+    margin-top: 4px;
+    display: none;
+}
+.addClass_i{
+    color: white !important;
+}
+.contentHistorySearchInputTop > div > span > a{
+    display: block;
+    padding: 4px 8px;
+    color: cornflowerblue;
+    font-size: 12px;
+    text-decoration: none;
+    transition: 0.2s;
+    font-weight: bold;
+    float: left;
+}
+.contentHistorySearchInputTop > .modal-body > span:not(:last-child):hover{
+    background-color: rgba(100,149,237,0.1);
+}
+.addClass_span:not(:last-child){
+    background-color: rgba(100,149,237,0.6);
+}
+.addClass_span:not(:last-child):hover{
+    background-color: rgba(100,149,237,0.6) !important;
+}
+.addClas_a{
+    color: white !important;
+}
+.contentHistorySearchInputTop > div > span#clearAll{
+    border: none;
+    font-size: 12px;
+    margin-top: 9px;
+    cursor: pointer;
+    display: none;
+}
+.contentHistorySearchInputTop > div > span#clearAll:hover{
+    text-decoration: underline;
+}
+.contentHistorySearchInputTop > .modal-header{
+    padding: 0;
+}
+.contentHistorySearchInputTop > .modal-header > span{
+    float: right;
+    font-size: 13px;
+    font-weight: bold;
+    color: lightblue;
+    cursor: pointer;
+}
+.contentHistorySearchInputTop > .modal-header > span:first-child{
+    float: left;
+    color: gray;
+    font-weight: normal;
+    cursor: auto;
+}
+.contentHistorySearchInputTop > .modal-header > span:not(:first-child):hover{
+    color: cornflowerblue;
+}
+.contentHistorySearchInputTop > .modal-body{
+    padding: 0;
+    padding-top: 5px;
+}
+.arrowKeySearchTop{
+    height: 30px;
+    float: left;
+    margin-left: -10px;
+    display: none;
+    cursor: pointer;
+}
+.arrowKeySearchTop > img{
+    height: 100%;
+    opacity: 0.5;
+}
+/*contentSearchTxtRe*/
+.contentHistorySearchInputTopRe{
+    margin-top: 50px;
+    width: 100%;
+    height: 100% !important;
+    background-color: white;
+    padding: 10px;
+    display: none;
+    float: left;
+    position: fixed;
+    z-index: 16;
+}
+.contentHistorySearchInputTopRe > div > .col-lg-12 > .modal-body > span{
+    margin: 4px 3px;
+    float: left;
+    border: 1px solid cornflowerblue;
+    border-radius: 3px;
+}
+.contentHistorySearchInputTopRe > div > .col-lg-12 > .modal-body > span > i{
+    font-size: 17px;
+    margin-right: 5px;
+    color: lightgray;
+    cursor: pointer;
+    margin-left: 2px;
+    float: left;
+    margin-top: 4px;
+    display: none;
+}
+.contentHistorySearchInputTopRe > div > .col-lg-12 > div > span > a{
+    display: block;
+    padding: 4px 8px;
+    color: cornflowerblue;
+    font-size: 12px;
+    text-decoration: none;
+    transition: 0.2s;
+    font-weight: bold;
+    float: left;
+}
+.contentHistorySearchInputTopRe > div > .col-lg-12 > .modal-body > span:not(:last-child):hover{
+    background-color: rgba(100,149,237,0.1);
+}
+.contentHistorySearchInputTopRe > div > .col-lg-12 > div > span#clearAll{
+    border: none;
+    font-size: 12px;
+    margin-top: 9px;
+    cursor: pointer;
+    display: none;
+}
+.contentHistorySearchInputTopRe > div > .col-lg-12 > div > span#clearAll:hover{
+    text-decoration: underline;
+}
+.contentHistorySearchInputTopRe > div > .col-lg-12 > .modal-header{
+    padding: 0;
+}
+.contentHistorySearchInputTopRe > div > .col-lg-12 > .modal-header > span{
+    float: right;
+    font-size: 13px;
+    font-weight: bold;
+    color: lightblue;
+    cursor: pointer;
+}
+.contentHistorySearchInputTopRe > div > .col-lg-12 > .modal-header > span:first-child{
+    float: left;
+    color: gray;
+    font-weight: normal;
+    cursor: auto;
+}
+.contentHistorySearchInputTopRe > div > .col-lg-12 > .modal-header > span:not(:first-child):hover{
+    color: cornflowerblue;
+}
+.contentHistorySearchInputTopRe > div > .col-lg-12 > .modal-body{
+    padding: 0;
+    padding-top: 5px;
+}
+/*end navtop*/

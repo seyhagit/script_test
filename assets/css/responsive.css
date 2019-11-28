@@ -1,0 +1,404 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*responsive with screet devices*/
+/*Large desktop*/
+@media (min-width:1300px) {
+    .container_fluid_cus{
+        z-index: 16;
+    }
+    .add_contentHistorySearchInputTop{
+        display: block;
+    }
+}
+@media (min-width:911px) and (max-width:1300px) {
+    .container_fluid_cus{
+        z-index: 10;
+    }
+    .container_cus_items{
+        width: 90%;
+    }
+
+
+
+
+    .add_contentHistorySearchInputTop{
+        display: block;
+    }
+    .add_mainBoxNavTop2{
+        width: 83%;
+    }
+    .box_search_navtop{
+        margin-left: 10px;
+        width: 55%;
+    }
+    .box_tool_right_navtop .all_box_right .box_img{
+        height: 25px;
+        width: 25px;
+        float: left;
+    }
+    .box_tool_right_navtop .all_box_right .box_title{
+        float: left;
+        height: 25px;
+        padding-left: 5px;
+    }
+    .box_tool_right_navtop .all_box_right .sub_box_title{
+        height: 25px;
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 11px;
+    }
+    .titleCatTopNav{
+        font-size: 12px;
+    }
+    .box_search_panel_top > ul > li{
+        padding: 9px 7px;
+        border-right: 1px solid lightgray;
+        width: 15%;
+        font-size: 12px;
+    }
+}
+
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width:768px) and (max-width:991px) {
+    .add_contentHistorySearchInputTop{
+        display: block;
+    }
+    .container_fluid_cus{
+        z-index: 10;
+    }
+    .container_cus_items{
+        width: 90%;
+    }
+
+
+    .add_box_option_re{
+        position: relative !important;
+        top: -1px !important;
+    }
+    .container_fluid_cus .box_logo{
+        height: 40px;
+        margin-top: 5px;
+        margin-left: -40px;
+    }
+    .add_box_logo{
+        margin-left: 10px !important;
+    }
+
+    .add_mainBoxNavTop2{
+        width: 75%;
+    }
+    .box_search_navtop{
+        margin-left: 50px;
+        width: 77%;
+        margin-top: -5px;
+    }
+    .box_search_panel_top > ul > li{
+        width: 18%;
+    }
+    .main_box_tool_right_navtop{
+        display: none !important;
+    }
+    .box_categories_top .titleCatTopNav{
+        display: none;
+    }
+    .btnSearchNavTop{
+        display: none !important;
+    }
+    .box_txt_input_search{
+        float: left;
+        width: 82%;
+        height: 100%;
+    }
+    .box_categories_top > ul > li{
+        cursor: pointer;
+        padding: 8.5px 15px;
+        border: 1px solid white;
+    }
+    .nav_top .box_contact_about{
+        margin-left: 37px;
+        margin-top: 15px;
+    }
+    .box_categories_top{
+        display: none;
+    }
+    .container_fluid_cus .box_option_re{
+        display: block;
+        position: relative;
+        top:46px;
+    }
+    #boxOptionRe{
+        background-color: white;
+        border: 1px solid lightgray;
+    }
+    .box_search_navtop .txtSearchNavTop{
+        border-radius: 3px;
+        height: 35px;
+    }
+
+    .boxOptionSlideConten .boxSlideConten{
+        margin-bottom: 10px;
+    }
+
+    .MainboxItemsIndex .boxItemIndex{
+        height: 230px;
+    }
+
+}
+/* landscape phone */
+@media (min-width:480px) and (max-width:767px) {
+
+    .container_fluid_cus{
+        position: fixed;
+        width: 100%;
+        height: 90px;
+        z-index: 100;
+    }
+    .container_cus_items{
+        width: 100%;
+    }
+
+
+    .add_contentHistorySearchInputTopRe{
+        display: block;
+        height: 100%;
+    }
+    .add_arrowKeySearchTop{
+        display: block;
+    }
+    .container_fluid_cus{
+        position: fixed;
+        width: 100%;
+        height: 90px;
+    }
+    .add2_container_fluid_cus{
+        height: 50px;
+    }
+    .add2_boxTopBeforeSearchBox{
+        display: none;
+    }
+    .add2_txtSearchNavTop{
+        border: none !important;
+        width: 95% !important;
+        float: right;
+    }
+    .add_main_box_contents{
+        display: none;
+    }
+    .add2_body{
+        background-color: white!important;
+        overflow: auto;
+        position: relative;
+    }
+
+
+
+
+    .container_fluid_cus {
+        top: 0;
+    }
+    .container_fluid_cus .box_logo{
+        height: 30px;
+        margin-top: 10px;
+    }
+    .box_contact_about{
+        display: none !important;
+    }
+    .container_fluid_cus .box_option_re{
+        display: block;
+    }
+    .container_fluid_cus .box_login_re{
+        display: block;
+    }
+    .box_categories_top{
+        display: none;
+    }
+    .box_search_navtop{
+        margin: 0;
+        margin-top: -5px;
+        width: 100%;
+        padding: 0 15px;
+        border: none;
+    }
+    .box_search_navtop .txtSearchNavTop{
+        border: 1px solid lightgray;
+        border-radius: 3px;
+        height: 30px !important;
+        font-size: 12.5px;
+    }
+    .box_btnSearchNavTop{
+        display: none !important;
+    }
+
+    .main_box_tool_right_navtop{
+        display: none !important;
+    }
+    .add_mainBoxNavTop2{
+        width: 100%;
+    }
+    .box_search_navtop .box_search_panel_top{
+        display: none !important;
+    }
+    .btnSearchNavTop{
+        display: none;
+    }
+    .box_search_navtop .box_txt_input_search{
+        width: 100% !important;
+    }
+    .container_fluid_cus .boxContentNavleftRe{
+        display: block;
+    }
+    .main_box_contents{
+        margin-top: 90px;
+    }
+
+    .containerFluidCusContentOption{
+        background: none;
+        padding: 0;
+    }
+    /*slide show*/
+    .containerFluidCusContentOption{
+        background: none;
+        padding: 0;
+    }
+    .boxOptionSlideConten .boxSlideConten{
+        height: 310px;
+        margin-bottom: 10px;
+    }
+
+}
+
+
+
+/* Portrait phone */
+@media (max-width:479px) {
+    .container_fluid_cus{
+        position: fixed;
+        width: 100%;
+        height: 90px;
+        top: 0;
+        z-index: 100;
+        padding: 0;
+    }
+    .container_cus_items{
+        width: 100%;
+    }
+
+    .add_contentHistorySearchInputTopRe{
+        display: block;
+    }
+    .add_arrowKeySearchTop{
+        display: block;
+    }
+    .add2_container_fluid_cus{
+        height: 50px;
+    }
+    .add2_boxTopBeforeSearchBox{
+        display: none;
+    }
+    .add2_txtSearchNavTop{
+        border: none !important;
+        width: 91% !important;
+        float: right;
+    }
+    .add_main_box_contents{
+        display: none;
+    }
+    .add2_body{
+        background-color: white!important;
+        overflow: auto;
+    }
+
+
+
+    .container_fluid_cus .box_logo{
+        height: 30px;
+        margin-top: 10px;
+    }
+    .box_contact_about{
+        display: none !important;
+    }
+    .container_fluid_cus .box_option_re{
+        display: block;
+    }
+    .container_fluid_cus .box_login_re{
+        display: block;
+    }
+    .box_categories_top{
+        display: none;
+    }
+    .box_search_navtop{
+        margin: 0;
+        margin-top: -5px;
+        width: 100%;
+        padding: 0 15px;
+        border: none;
+    }
+    .box_search_navtop .txtSearchNavTop{
+        border: 1px solid lightgray;
+        border-radius: 3px;
+        height: 30px !important;
+        font-size: 12.5px;
+    }
+    .box_btnSearchNavTop{
+        display: none !important;
+    }
+
+    .main_box_tool_right_navtop{
+        display: none !important;
+    }
+    .add_mainBoxNavTop2{
+        width: 100%;
+    }
+    .box_search_navtop .box_search_panel_top{
+        display: none !important;
+    }
+    .btnSearchNavTop{
+        display: none;
+    }
+    .box_search_navtop .box_txt_input_search{
+        width: 100% !important;
+    }
+    .boxContentNavleftRe{
+        display: block;
+    }
+
+    .main_box_contents{
+        margin-top: 90px;
+    }
+
+
+    /*slide show*/
+    .containerFluidCusContentOption{
+        background: none;
+        padding: 0;
+    }
+    .boxOptionSlideConten .boxSlideConten{
+        height: 240px;
+        margin-bottom: 10px;
+    }
+
+    /*item index*/
+    .container_items_index{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .MainboxItemsIndex > .row > div{
+        padding: 5px;
+        margin-bottom: 4px;
+    }
+    .MainboxItemsIndex .boxItemIndex{
+        height: 200px;
+    }
+    .boxItemIndex > a > .i_boxDetial > .i_contentD{
+        font-size: 13px;
+    }
+    .boxItemIndex > a > .i_boxDetial > .i_footerContentD > span:first-child{
+        font-size: 15px;
+    }
+
+}
+
+
+
